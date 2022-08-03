@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:vue/vue3-recommended",
+      "plugin:prettier/recommended", 
+      "eslint-config-prettier"
+  ],
+  "parserOptions": {
+      "ecmaVersion": "latest",
+      "parser": "@typescript-eslint/parser",
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "modules": true,
+        "jsx": true
+      }
+  },
+  "plugins": [
+      "vue",
+      "@typescript-eslint",
+      "prettier"
+  ],
+  "rules": {
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "no-ex-assign": "error",
+    "no-extra-boolean-cast": "error",
+    "curly": "error",
+    "prettier/prettier": 1,
+    "semi": ["error", "never"],
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "vue/multi-word-component-names": "off",
+    "linebreak-style": 0
+  }
+}
