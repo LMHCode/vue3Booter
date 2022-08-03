@@ -1,5 +1,10 @@
 <script setup lang="ts">
-//
+import { storeToRefs } from 'pinia'
+import storeUser from '@/pinia/user'
+
+const userStore = storeUser()
+let { username, age } = storeToRefs(userStore)
+console.log(username.value, age.value)
 </script>
 
 <template>

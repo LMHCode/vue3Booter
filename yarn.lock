@@ -199,7 +199,7 @@
     "@vue/compiler-dom" "3.2.37"
     "@vue/shared" "3.2.37"
 
-"@vue/devtools-api@^6.0.0":
+"@vue/devtools-api@^6.0.0", "@vue/devtools-api@^6.2.1":
   "integrity" "sha512-OEgAMeQXvCoJ+1x8WyQuVZzFo0wcyCmUR3baRVLmKBo1LmYZWMlRiXlux5jd0fqVJu6PfDbOrZItVqUEzLobeQ=="
   "resolved" "https://npm-public.transspay.net/@vue%2fdevtools-api/-/devtools-api-6.2.1.tgz"
   "version" "6.2.1"
@@ -1357,6 +1357,21 @@
   "resolved" "https://npm-public.transspay.net/picomatch/-/picomatch-2.3.1.tgz"
   "version" "2.3.1"
 
+"pinia-plugin-persist@^1.0.0":
+  "integrity" "sha512-M4hBBd8fz/GgNmUPaaUsC29y1M09lqbXrMAHcusVoU8xlQi1TqgkWnnhvMikZwr7Le/hVyMx8KUcumGGrR6GVw=="
+  "resolved" "https://npm-public.transspay.net/pinia-plugin-persist/-/pinia-plugin-persist-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "vue-demi" "^0.12.1"
+
+"pinia@^2.0.0", "pinia@^2.0.17":
+  "integrity" "sha512-AtwLwEWQgIjofjgeFT+nxbnK5lT2QwQjaHNEDqpsi2AiCwf/NY78uWTeHUyEhiiJy8+sBmw0ujgQMoQbWiZDfA=="
+  "resolved" "https://npm-public.transspay.net/pinia/-/pinia-2.0.17.tgz"
+  "version" "2.0.17"
+  dependencies:
+    "@vue/devtools-api" "^6.2.1"
+    "vue-demi" "*"
+
 "postcss-px-to-viewport@^1.1.1":
   "integrity" "sha512-2x9oGnBms+e0cYtBJOZdlwrFg/mLR4P1g2IFu7jYKvnqnH/HLhoKyareW2Q/x4sg0BgklHlP1qeWo2oCyPm8FQ=="
   "resolved" "https://npm-public.transspay.net/postcss-px-to-viewport/-/postcss-px-to-viewport-1.1.1.tgz"
@@ -1609,7 +1624,7 @@
   "resolved" "https://npm-public.transspay.net/type-fest/-/type-fest-0.20.2.tgz"
   "version" "0.20.2"
 
-"typescript@^4.7.4", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
+"typescript@^4.7.4", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", "typescript@>=4.4.4":
   "integrity" "sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ=="
   "resolved" "https://npm-public.transspay.net/typescript/-/typescript-4.7.4.tgz"
   "version" "4.7.4"
@@ -1653,6 +1668,16 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
+"vue-demi@*":
+  "integrity" "sha512-02NYpxgyGE2kKGegRPYlNQSL1UWfA/+JqvzhGCOYjhfbLWXU5QQX0+9pAm/R2sCOPKr5NBxVIab7fvFU0B1RxQ=="
+  "resolved" "https://npm-public.transspay.net/vue-demi/-/vue-demi-0.13.6.tgz"
+  "version" "0.13.6"
+
+"vue-demi@^0.12.1":
+  "integrity" "sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q=="
+  "resolved" "https://npm-public.transspay.net/vue-demi/-/vue-demi-0.12.5.tgz"
+  "version" "0.12.5"
+
 "vue-eslint-parser@^9.0.1":
   "integrity" "sha512-yL+ZDb+9T0ELG4VIFo/2anAOz8SvBdlqEnQnvJ3M7Scq56DvtjY0VY88bByRZB0D4J0u8olBcfrXTVONXsh4og=="
   "resolved" "https://npm-public.transspay.net/vue-eslint-parser/-/vue-eslint-parser-9.0.3.tgz"
@@ -1673,7 +1698,7 @@
   dependencies:
     "@vue/devtools-api" "^6.0.0"
 
-"vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.37", "vue@3.2.37":
+"vue@^2.0.0 || >=3.0.0", "vue@^2.6.14 || ^3.2.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.37", "vue@3.2.37":
   "integrity" "sha512-bOKEZxrm8Eh+fveCqS1/NkG/n6aMidsI6hahas7pa0w/l7jkbssJVsRhVDs07IdDq7h9KHswZOgItnwJAgtVtQ=="
   "resolved" "https://npm-public.transspay.net/vue/-/vue-3.2.37.tgz"
   "version" "3.2.37"
