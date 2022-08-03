@@ -7,8 +7,20 @@ import postcsspxtoviewport from 'postcss-px-to-viewport'
 export default defineConfig({
   plugins: [vue()],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
+    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }]
+  },
+  server: {
+    port: 3008, // 服务端口号
+    open: true, // 服务启动时是否自动打开浏览器
+    cors: true, // 允许跨域
+    host: '0.0.0.0',
+    proxy: {
+      '/api': {
+        target: 'http://www.xxxx.com.cn',
+        changeOrigin: true
+        // rewrite: (path) => path.replace('/api', '')
+      }
     }
   },
   css: {
