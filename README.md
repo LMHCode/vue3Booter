@@ -6,4 +6,4 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
-## vue3+Vite+pina+react-router+axios+sass
+## vue3+Vite+pina+vue-router+axios+sass

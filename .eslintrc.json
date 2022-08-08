@@ -39,7 +39,6 @@
     "curly": "error",
     "prettier/prettier": 1,
     "semi": ["error", "never"],
-    "react/no-unescaped-entities": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-empty-function": "off",
