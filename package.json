@@ -14,6 +14,13 @@
     "prepare":"husky install",
     "lint":"lint-staged"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,vue}": [
+      "prettier --write",
+      "eslint --cache --fix",
+      "git add"
+    ]
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "pinia": "^2.0.17",
