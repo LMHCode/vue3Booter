@@ -8,7 +8,7 @@ console.log(username.value, age.value)
 </script>
 
 <template>
-  <p class="read-the-docs">Home</p>
+  <p class="read-the-docs">Homecc</p>
 </template>
 
 <style scoped>

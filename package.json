@@ -10,7 +10,9 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "build:test": "vite build --mode test",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare":"husky install",
+    "lint":"lint-staged"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -30,6 +32,8 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.3.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "postcss-px-to-viewport": "^1.1.1",
     "prettier": "^2.7.1",
     "vite": "^3.0.0"
