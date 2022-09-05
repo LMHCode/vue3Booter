@@ -4,7 +4,22 @@ const routes = [
   {
     path: '/',
     component: () => import('@/view/Home/index.vue'),
-    name: 'Home'
+    name: 'Home',
+    children: [
+      {
+        path: 'lay',
+        component: () => import('@/view/Home/index.vue'),
+        name: 'lay'
+      }
+    ]
+  },
+  {
+    path: '/404',
+    component: () => import('@/view/PageError/index.vue'),
+    name: '404',
+    meta: {
+      keepAlive: true
+    }
   }
 ]
 
@@ -15,6 +30,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
+  console.log('has404+++', router.hasRoute('404'), router.getRoutes())
   console.log(to.name, from)
   document.title = to.name as string
   next()
