@@ -2,10 +2,14 @@
 import RedPackage from '@/untils/redPackage'
 const redPage = new RedPackage({ domId: 'redPage' })
 redPage.init()
+const clear = () => {
+  redPage.clear()
+}
 </script>
 
 <template>
   <div id="redPage"></div>
+  <button @click="clear">clear</button>
 </template>
 
 <style scoped>

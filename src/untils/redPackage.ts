@@ -2,7 +2,8 @@ import hongbao from '@/assets/images/hongbao.png'
 import '@/assets/styles/demo.scss'
 class RedPackage {
   domId: string
-  timer: any
+  timer: number
+  dom: HTMLElement
   constructor(props: any) {
     this.domId = props.domId as string
   }
@@ -15,26 +16,26 @@ class RedPackage {
       img.style.transition = `all ${timeNum}s linear`
       img.classList.add('img')
       img.src = hongbao
-      let dom: HTMLElement = document.getElementById(this.domId) as HTMLElement
-      dom && dom.appendChild(img)
+      this.dom = document.getElementById(this.domId) as HTMLElement
+      this.dom && this.dom.appendChild(img)
       img.style.top = -img.offsetHeight + 'px'
-      let leftDistance = Math.random() * dom.offsetWidth - img.offsetWidth
+      let leftDistance = Math.random() * this.dom.offsetWidth - img.offsetWidth
       if (leftDistance < 0) {
         leftDistance = 0
       }
       img.style.left = leftDistance + 'px'
       // 生成红包100毫秒后进行移动
       setTimeout(() => {
-        img.style.top = dom.offsetHeight + 'px'
+        img.style.top = this.dom.offsetHeight + 'px'
         // 随机数范围2-4，红包下落完成后，若没有点击红包则销毁dom
         let timeOut = setTimeout(() => {
-          dom.removeChild(img)
+          this.dom.removeChild(img)
         }, timeNum * 1000)
         // 点击红包操作
         img.onclick = () => {
           // 点击之后终止销毁dom操作，直接销毁
           clearTimeout(timeOut)
-          dom.removeChild(img)
+          this.dom.removeChild(img)
           console.log('中了个锤子')
         }
       }, 100)
@@ -42,6 +43,7 @@ class RedPackage {
   }
 
   clear() {
+    this.dom.remove()
     clearInterval(this.timer)
   }
 }
