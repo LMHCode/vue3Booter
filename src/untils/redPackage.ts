@@ -17,7 +17,6 @@ class RedPackage {
       img.src = hongbao
       let dom: HTMLElement = document.getElementById(this.domId) as HTMLElement
       dom && dom.appendChild(img)
-      img.style.position = 'absolute'
       img.style.top = -img.offsetHeight + 'px'
       let leftDistance = Math.random() * dom.offsetWidth - img.offsetWidth
       if (leftDistance < 0) {
