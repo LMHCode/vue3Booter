@@ -10,7 +10,6 @@ redPage.init()
 
 <style scoped>
 #redPage {
-  color: #888;
   width: 100vw;
   height: 100vh;
   position: relative;
