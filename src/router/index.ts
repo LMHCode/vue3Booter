@@ -20,6 +20,14 @@ const routes = [
     meta: {
       keepAlive: true
     }
+  },
+  {
+    path: '/demo',
+    component: () => import('@/view/Demo/index.vue'),
+    name: 'demo',
+    meta: {
+      keepAlive: true
+    }
   }
 ]
 
