@@ -13,7 +13,6 @@ class RedPackage {
       let timeNum = Math.random() * 2 + 2
       img.style.transition = `all ${timeNum}s linear`
       img.className = 'red'
-      // 随便一张图，我从百度拿的，可替换或者将img标签更换成自定义样式得div
       img.src = hongbao
       let dom: HTMLElement = document.getElementById(this.domId) as HTMLElement
       dom && dom.appendChild(img)
