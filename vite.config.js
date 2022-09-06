@@ -41,6 +41,16 @@ export default defineConfig({
           landscape: false // 是否处理横屏情况
         })
       ]
+    },
+    //全局引入
+    preprocessorOptions: {
+      scss: {
+        /**如果引入多个文件，可以使用
+         * '@import "@/assets/scss/globalVariable1.scss";
+         * @import"@/assets/scss/globalVariable2.scss";'
+         **/
+        // additionalData: '@import "@/style/globalVar.scss";'
+      }
     }
   }
 })

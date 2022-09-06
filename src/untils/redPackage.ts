@@ -1,4 +1,5 @@
 import hongbao from '@/assets/images/hongbao.png'
+import '@/assets/styles/demo.scss'
 class RedPackage {
   domId: string
   timer: any
@@ -12,12 +13,10 @@ class RedPackage {
       // 随机数范围2-4，红包下落所需时间
       let timeNum = Math.random() * 2 + 2
       img.style.transition = `all ${timeNum}s linear`
-      img.className = 'red'
+      img.classList.add('img')
       img.src = hongbao
       let dom: HTMLElement = document.getElementById(this.domId) as HTMLElement
       dom && dom.appendChild(img)
-      img.style.width = '50px'
-      img.style.height = '60px'
       img.style.position = 'absolute'
       img.style.top = -img.offsetHeight + 'px'
       let leftDistance = Math.random() * dom.offsetWidth - img.offsetWidth
