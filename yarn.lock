@@ -7,6 +7,13 @@
   "resolved" "https://npm-public.transspay.net/@babel%2fparser/-/parser-7.18.10.tgz"
   "version" "7.18.10"
 
+"@babel/runtime@^7.4.5", "@babel/runtime@^7.7.6":
+  "integrity" "sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA=="
+  "resolved" "https://npm-public.transspay.net/@babel%2fruntime/-/runtime-7.19.0.tgz"
+  "version" "7.19.0"
+  dependencies:
+    "regenerator-runtime" "^0.13.4"
+
 "@eslint/eslintrc@^1.3.0":
   "integrity" "sha512-UWW0TMTmk2d7hLcWD1/e2g5HDM/HQ3csaLSqXCfqwh4uNDuNqlaKWXmEsL4Cs41Z0KnILNvwbHAah3C2yt06kw=="
   "resolved" "https://npm-public.transspay.net/@eslint%2feslintrc/-/eslintrc-1.3.0.tgz"
@@ -40,6 +47,25 @@
   "integrity" "sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA=="
   "resolved" "https://npm-public.transspay.net/@humanwhocodes%2fobject-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
+
+"@mesh.js/core@^1.1.23":
+  "integrity" "sha512-Jxn0EGEbADruAVSgpLbX9S6j3GVeat7QvElc+zU8boFI4TyR5MhAMDTKM5VnCnWmExJByS5KN1EHs5tvYocFnA=="
+  "resolved" "https://npm-public.transspay.net/@mesh.js%2fcore/-/core-1.1.25.tgz"
+  "version" "1.1.25"
+  dependencies:
+    "@babel/runtime" "^7.4.5"
+    "abs-svg-path" "^0.1.1"
+    "adaptive-bezier-curve" "^1.0.3"
+    "as-number" "^1.0.0"
+    "bound-points" "^1.0.0"
+    "color-rgba" "^2.1.1"
+    "gl-matrix" "^3.1.0"
+    "gl-renderer" "^0.13.5"
+    "parse-svg-path" "^0.1.2"
+    "polyline-miter-util" "^1.0.1"
+    "simplify-path" "^1.1.0"
+    "tess2" "^1.0.0"
+    "xtend" "^4.0.2"
 
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
@@ -252,6 +278,11 @@
   "resolved" "https://npm-public.transspay.net/@vue%2fshared/-/shared-3.2.37.tgz"
   "version" "3.2.37"
 
+"abs-svg-path@^0.1.1":
+  "integrity" "sha512-d8XPSGjfyzlXC3Xx891DJRyZfqk5JU0BJrDQcsWomFIV1/BIzPW5HDH5iDdWpqWaav0YVIEzT1RHTwWr0FFshA=="
+  "resolved" "https://npm-public.transspay.net/abs-svg-path/-/abs-svg-path-0.1.1.tgz"
+  "version" "0.1.1"
+
 "acorn-jsx@^5.3.2":
   "integrity" "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ=="
   "resolved" "https://npm-public.transspay.net/acorn-jsx/-/acorn-jsx-5.3.2.tgz"
@@ -261,6 +292,11 @@
   "integrity" "sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w=="
   "resolved" "https://npm-public.transspay.net/acorn/-/acorn-8.8.0.tgz"
   "version" "8.8.0"
+
+"adaptive-bezier-curve@^1.0.3":
+  "integrity" "sha512-mDcwN284LlNAdunqnVmS0PAoDNHKze/PY8zvpCdxzyXD+ZZFeMWQ3FKNBw0VMOd9IfnhIyzAWJDXzRcWnXtoSg=="
+  "resolved" "https://npm-public.transspay.net/adaptive-bezier-curve/-/adaptive-bezier-curve-1.0.3.tgz"
+  "version" "1.0.3"
 
 "aggregate-error@^3.0.0":
   "integrity" "sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA=="
@@ -348,6 +384,11 @@
     "es-abstract" "^1.19.2"
     "es-shim-unscopables" "^1.0.0"
 
+"as-number@^1.0.0":
+  "integrity" "sha512-HkI/zLo2AbSRO4fqVkmyf3hms0bJDs3iboHqTrNuwTiCRvdYXM7HFhfhB6Dk51anV2LM/IMB83mtK9mHw4FlAg=="
+  "resolved" "https://npm-public.transspay.net/as-number/-/as-number-1.0.0.tgz"
+  "version" "1.0.0"
+
 "astral-regex@^2.0.0":
   "integrity" "sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ=="
   "resolved" "https://npm-public.transspay.net/astral-regex/-/astral-regex-2.0.0.tgz"
@@ -366,19 +407,37 @@
     "follow-redirects" "^1.14.9"
     "form-data" "^4.0.0"
 
+"babel-runtime@^6.26.0":
+  "integrity" "sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g=="
+  "resolved" "https://npm-public.transspay.net/babel-runtime/-/babel-runtime-6.26.0.tgz"
+  "version" "6.26.0"
+  dependencies:
+    "core-js" "^2.4.0"
+    "regenerator-runtime" "^0.11.0"
+
 "balanced-match@^1.0.0":
   "integrity" "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="
   "resolved" "https://npm-public.transspay.net/balanced-match/-/balanced-match-1.0.2.tgz"
   "version" "1.0.2"
+
+"bezier-easing@^2.0.3":
+  "integrity" "sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig=="
+  "resolved" "https://npm-public.transspay.net/bezier-easing/-/bezier-easing-2.1.0.tgz"
+  "version" "2.1.0"
 
 "binary-extensions@^2.0.0":
   "integrity" "sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA=="
   "resolved" "https://npm-public.transspay.net/binary-extensions/-/binary-extensions-2.2.0.tgz"
   "version" "2.2.0"
 
-"boolbase@^1.0.0":
+"boolbase@^1.0.0", "boolbase@~1.0.0":
   "integrity" "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
   "resolved" "https://npm-public.transspay.net/boolbase/-/boolbase-1.0.0.tgz"
+  "version" "1.0.0"
+
+"bound-points@^1.0.0":
+  "integrity" "sha512-D5v3yrtBvia09U2+Js73YMswySOclYHuXNFFzYvsigAdqpY5YG+kY4cSHi7Mww6yU8N8u0T1XkMkRGgeDdWqBA=="
+  "resolved" "https://npm-public.transspay.net/bound-points/-/bound-points-1.0.0.tgz"
   "version" "1.0.0"
 
 "brace-expansion@^1.1.7":
@@ -467,10 +526,30 @@
   dependencies:
     "color-name" "~1.1.4"
 
-"color-name@~1.1.4":
+"color-name@^1.0.0", "color-name@~1.1.4":
   "integrity" "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA=="
   "resolved" "https://npm-public.transspay.net/color-name/-/color-name-1.1.4.tgz"
   "version" "1.1.4"
+
+"color-parse@^1.4.2":
+  "integrity" "sha512-RI7s49/8yqDj3fECFZjUI1Yi0z/Gq1py43oNJivAIIDSyJiOZLfYCRQEgn8HEVAj++PcRe8AnL2XF0fRJ3BTnA=="
+  "resolved" "https://npm-public.transspay.net/color-parse/-/color-parse-1.4.2.tgz"
+  "version" "1.4.2"
+  dependencies:
+    "color-name" "^1.0.0"
+
+"color-rgba@^2.1.1":
+  "integrity" "sha512-Nti4qbzr/z2LbUWySr7H9dk3Rl7gZt7ihHAxlgT4Ho90EXWkjtkL1avTleu9yeGuqrt/chxTB6GKK8nZZ6V0+Q=="
+  "resolved" "https://npm-public.transspay.net/color-rgba/-/color-rgba-2.4.0.tgz"
+  "version" "2.4.0"
+  dependencies:
+    "color-parse" "^1.4.2"
+    "color-space" "^2.0.0"
+
+"color-space@^2.0.0":
+  "integrity" "sha512-Bu8P/usGNuVWushjxcuaGSkhT+L2KX0cvgMGMTF0KJ7lFeqonhsntT68d6Yu3uwZzCmbF7KTB9EV67AGcUXhJw=="
+  "resolved" "https://npm-public.transspay.net/color-space/-/color-space-2.0.0.tgz"
+  "version" "2.0.0"
 
 "colorette@^2.0.16", "colorette@^2.0.17":
   "integrity" "sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ=="
@@ -499,6 +578,11 @@
   "resolved" "https://npm-public.transspay.net/confusing-browser-globals/-/confusing-browser-globals-1.0.11.tgz"
   "version" "1.0.11"
 
+"core-js@^2.4.0":
+  "integrity" "sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ=="
+  "resolved" "https://npm-public.transspay.net/core-js/-/core-js-2.6.12.tgz"
+  "version" "2.6.12"
+
 "cross-spawn@^7.0.2", "cross-spawn@^7.0.3":
   "integrity" "sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w=="
   "resolved" "https://npm-public.transspay.net/cross-spawn/-/cross-spawn-7.0.3.tgz"
@@ -507,6 +591,21 @@
     "path-key" "^3.1.0"
     "shebang-command" "^2.0.0"
     "which" "^2.0.1"
+
+"css-select@^2.0.2":
+  "integrity" "sha512-Dqk7LQKpwLoH3VovzZnkzegqNSuAziQyNZUcrdDM401iY+R5NkGBXGmtO05/yaXQziALuPogeG0b7UAgjnTJTQ=="
+  "resolved" "https://npm-public.transspay.net/css-select/-/css-select-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "boolbase" "^1.0.0"
+    "css-what" "^3.2.1"
+    "domutils" "^1.7.0"
+    "nth-check" "^1.0.2"
+
+"css-what@^3.2.1":
+  "integrity" "sha512-ACUm3L0/jiZTqfzRM3Hi9Q8eZqd6IK37mMWPLz9PJxkLWllYeRf+EHUSHYEtFop2Eqytaq1FizFVh7XfBnXCDQ=="
+  "resolved" "https://npm-public.transspay.net/css-what/-/css-what-3.4.2.tgz"
+  "version" "3.4.2"
 
 "cssesc@^3.0.0":
   "integrity" "sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg=="
@@ -578,6 +677,32 @@
   dependencies:
     "esutils" "^2.0.2"
 
+"dom-serializer@0":
+  "integrity" "sha512-2/xPb3ORsQ42nHYiSunXkDjPLBaEj/xTwUO4B7XCZQTRk7EBtTOPaygh10YAAh2OI1Qrp6NWfpAhzswj0ydt9g=="
+  "resolved" "https://npm-public.transspay.net/dom-serializer/-/dom-serializer-0.2.2.tgz"
+  "version" "0.2.2"
+  dependencies:
+    "domelementtype" "^2.0.1"
+    "entities" "^2.0.0"
+
+"domelementtype@^2.0.1":
+  "integrity" "sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw=="
+  "resolved" "https://npm-public.transspay.net/domelementtype/-/domelementtype-2.3.0.tgz"
+  "version" "2.3.0"
+
+"domelementtype@1":
+  "integrity" "sha512-BSKB+TSpMpFI/HOxCNr1O8aMOTZ8hT3pM3GQ0w/mWRmkhEDSFJkkyzz4XQsBV44BChwGkrDfMyjVD0eA2aFV3w=="
+  "resolved" "https://npm-public.transspay.net/domelementtype/-/domelementtype-1.3.1.tgz"
+  "version" "1.3.1"
+
+"domutils@^1.7.0":
+  "integrity" "sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg=="
+  "resolved" "https://npm-public.transspay.net/domutils/-/domutils-1.7.0.tgz"
+  "version" "1.7.0"
+  dependencies:
+    "dom-serializer" "0"
+    "domelementtype" "1"
+
 "eastasianwidth@^0.2.0":
   "integrity" "sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA=="
   "resolved" "https://npm-public.transspay.net/eastasianwidth/-/eastasianwidth-0.2.0.tgz"
@@ -592,6 +717,11 @@
   "integrity" "sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg=="
   "resolved" "https://npm-public.transspay.net/emoji-regex/-/emoji-regex-9.2.2.tgz"
   "version" "9.2.2"
+
+"entities@^2.0.0":
+  "integrity" "sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A=="
+  "resolved" "https://npm-public.transspay.net/entities/-/entities-2.2.0.tgz"
+  "version" "2.2.0"
 
 "es-abstract@^1.19.0", "es-abstract@^1.19.1", "es-abstract@^1.19.2", "es-abstract@^1.19.5":
   "integrity" "sha512-WEm2oBhfoI2sImeM4OF2zE2V3BYdSF+KnSi9Sidz51fQHd7+JuF8Xgcj9/0o+OWeIeIS/MiuNnlruQrJf16GQA=="
@@ -1026,6 +1156,23 @@
   dependencies:
     "call-bind" "^1.0.2"
     "get-intrinsic" "^1.1.1"
+
+"gl-matrix@^3.1.0":
+  "integrity" "sha512-wcCp8vu8FT22BnvKVPjXa/ICBWRq/zjFfdofZy1WSpQZpphblv12/bOQLBC1rMM7SGOFS9ltVmKOHil5+Ml7gA=="
+  "resolved" "https://npm-public.transspay.net/gl-matrix/-/gl-matrix-3.4.3.tgz"
+  "version" "3.4.3"
+
+"gl-renderer@^0.13.5":
+  "integrity" "sha512-FaD9JFb6tabjkExpeQnVkT4fNJJMb01yuBvyPGa1N4V/wEVHvwDoEDiKEkqvC+I4fj1GNV0uQoT58jRmK/sHvQ=="
+  "resolved" "https://npm-public.transspay.net/gl-renderer/-/gl-renderer-0.13.6.tgz"
+  "version" "0.13.6"
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+
+"gl-vec2@^1.0.0":
+  "integrity" "sha512-YiqaAuNsheWmUV0Sa8k94kBB0D6RWjwZztyO+trEYS8KzJ6OQB/4686gdrf59wld4hHFIvaxynO3nRxpk1Ij/A=="
+  "resolved" "https://npm-public.transspay.net/gl-vec2/-/gl-vec2-1.3.0.tgz"
+  "version" "1.3.0"
 
 "glob-parent@^5.1.2":
   "integrity" "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow=="
@@ -1514,6 +1661,13 @@
   dependencies:
     "path-key" "^4.0.0"
 
+"nth-check@^1.0.2":
+  "integrity" "sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg=="
+  "resolved" "https://npm-public.transspay.net/nth-check/-/nth-check-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "boolbase" "~1.0.0"
+
 "nth-check@^2.0.1":
   "integrity" "sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w=="
   "resolved" "https://npm-public.transspay.net/nth-check/-/nth-check-2.1.1.tgz"
@@ -1644,6 +1798,16 @@
   dependencies:
     "callsites" "^3.0.0"
 
+"parse-svg-path@^0.1.2":
+  "integrity" "sha512-JyPSBnkTJ0AI8GGJLfMXvKq42cj5c006fnLz6fXy6zfoVjJizi8BNTpu8on8ziI1cKy9d9DGNuY17Ce7wuejpQ=="
+  "resolved" "https://npm-public.transspay.net/parse-svg-path/-/parse-svg-path-0.1.2.tgz"
+  "version" "0.1.2"
+
+"pasition@^1.0.2":
+  "integrity" "sha512-hsUNLhS7e5uWGkTtgbxoHMzCUb0PeboQelyqPmpRkAk26AkKal0Z6JfYWhjIEhZHIYzJTfr6Aom/BpBPrZXHnA=="
+  "resolved" "https://npm-public.transspay.net/pasition/-/pasition-1.0.3.tgz"
+  "version" "1.0.3"
+
 "path-exists@^3.0.0":
   "integrity" "sha512-bpC7GYwiDYQ4wYLe+FA8lhRjhQCMcQGuSgGGqDkg/QerRWw9CmGRT0iSOVRSZJ29NMLZgIzqaljJ63oaL4NIJQ=="
   "resolved" "https://npm-public.transspay.net/path-exists/-/path-exists-3.0.0.tgz"
@@ -1709,6 +1873,13 @@
     "@vue/devtools-api" "^6.2.1"
     "vue-demi" "*"
 
+"polyline-miter-util@^1.0.1":
+  "integrity" "sha512-/3u91zz6mBerBZo6qnOJOTjv7EfPhKtsV028jMyj86YpzLRNmCCFfrX7IO9tCEQ2W4x45yc+vKOezjf7u2Nd6Q=="
+  "resolved" "https://npm-public.transspay.net/polyline-miter-util/-/polyline-miter-util-1.0.1.tgz"
+  "version" "1.0.1"
+  dependencies:
+    "gl-vec2" "^1.0.0"
+
 "postcss-px-to-viewport@^1.1.1":
   "integrity" "sha512-2x9oGnBms+e0cYtBJOZdlwrFg/mLR4P1g2IFu7jYKvnqnH/HLhoKyareW2Q/x4sg0BgklHlP1qeWo2oCyPm8FQ=="
   "resolved" "https://npm-public.transspay.net/postcss-px-to-viewport/-/postcss-px-to-viewport-1.1.1.tgz"
@@ -1767,6 +1938,16 @@
   "version" "3.6.0"
   dependencies:
     "picomatch" "^2.2.1"
+
+"regenerator-runtime@^0.11.0":
+  "integrity" "sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg=="
+  "resolved" "https://npm-public.transspay.net/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz"
+  "version" "0.11.1"
+
+"regenerator-runtime@^0.13.4":
+  "integrity" "sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA=="
+  "resolved" "https://npm-public.transspay.net/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz"
+  "version" "0.13.9"
 
 "regexp.prototype.flags@^1.4.3":
   "integrity" "sha512-fjggEOO3slI6Wvgjwflkc4NFRCTZAu5CnNfBd5qOMYhWdn67nJBBu34/TkD++eeFmd8C9r9jfXJ27+nSiRkSUA=="
@@ -1889,6 +2070,11 @@
   "resolved" "https://npm-public.transspay.net/signal-exit/-/signal-exit-3.0.7.tgz"
   "version" "3.0.7"
 
+"simplify-path@^1.1.0":
+  "integrity" "sha512-qvEyrV36pP6YjRoEAe7ymSqFwurrTQXltcmZaQXFVh8cTWUfHYGeobbMK8V7WHlT9+ysW3GNVkCd6TF8aM0ydw=="
+  "resolved" "https://npm-public.transspay.net/simplify-path/-/simplify-path-1.1.0.tgz"
+  "version" "1.1.0"
+
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
   "resolved" "https://npm-public.transspay.net/slash/-/slash-3.0.0.tgz"
@@ -1934,6 +2120,35 @@
   "integrity" "sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA=="
   "resolved" "https://npm-public.transspay.net/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz"
   "version" "1.4.8"
+
+"sprite-animator@^1.11.5":
+  "integrity" "sha512-YqYLYYgyvrhXTF4aYyXb0NfdS4uBSKIYKwbBgAKCSsw6sogcgShWoNnV4SgOtI250kIUS/dZH0OZ+lgbCBgAGA=="
+  "resolved" "https://npm-public.transspay.net/sprite-animator/-/sprite-animator-1.11.5.tgz"
+  "version" "1.11.5"
+  dependencies:
+    "babel-runtime" "^6.26.0"
+    "bezier-easing" "^2.0.3"
+    "sprite-timeline" "^1.10.2"
+
+"sprite-timeline@^1.10.2":
+  "integrity" "sha512-Nu0SNxSy04tyZELMYEjvKVN/2KoluLIXj4qHGrNSLKmQX9sPDegg2EzhnpP50FKQQAEDPHgrYlg3MuQA3cVW1g=="
+  "resolved" "https://npm-public.transspay.net/sprite-timeline/-/sprite-timeline-1.10.2.tgz"
+  "version" "1.10.2"
+  dependencies:
+    "babel-runtime" "^6.26.0"
+
+"spritejs@^3.8.1":
+  "integrity" "sha512-Qc/WJMGXA09MD3QufGgLowTgGfBIxmozVWRNifBMyW4PGBqctDECkmvW/MinraNCgrQphRrZ8IUEQUl4enEgKw=="
+  "resolved" "https://npm-public.transspay.net/spritejs/-/spritejs-3.8.1.tgz"
+  "version" "3.8.1"
+  dependencies:
+    "@babel/runtime" "^7.4.5"
+    "@mesh.js/core" "^1.1.23"
+    "color-rgba" "^2.1.1"
+    "css-select" "^2.0.2"
+    "gl-matrix" "^3.1.0"
+    "pasition" "^1.0.2"
+    "sprite-animator" "^1.11.5"
 
 "string-argv@^0.3.1":
   "integrity" "sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg=="
@@ -2024,6 +2239,11 @@
 "supports-preserve-symlinks-flag@^1.0.0":
   "integrity" "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=="
   "resolved" "https://npm-public.transspay.net/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
+  "version" "1.0.0"
+
+"tess2@^1.0.0":
+  "integrity" "sha512-iSWBSOUoPn3cCT26L5Wi6mvVgL11RV4kReSnVIIPdMN7qNpkL5SLKen5BJcWj+ZTN7kK6JrHBdqTV7vvL8g+9w=="
+  "resolved" "https://npm-public.transspay.net/tess2/-/tess2-1.0.0.tgz"
   "version" "1.0.0"
 
 "text-table@^0.2.0":
@@ -2222,6 +2442,11 @@
   "integrity" "sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw=="
   "resolved" "https://npm-public.transspay.net/xml-name-validator/-/xml-name-validator-4.0.0.tgz"
   "version" "4.0.0"
+
+"xtend@^4.0.2":
+  "integrity" "sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ=="
+  "resolved" "https://npm-public.transspay.net/xtend/-/xtend-4.0.2.tgz"
+  "version" "4.0.2"
 
 "yallist@^4.0.0":
   "integrity" "sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A=="

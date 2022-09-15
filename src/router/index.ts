@@ -28,6 +28,14 @@ const routes = [
     meta: {
       keepAlive: true
     }
+  },
+  {
+    path: '/spriteDemo',
+    component: () => import('@/view/spriteDemo/index.vue'),
+    name: 'spriteDemo',
+    meta: {
+      keepAlive: true
+    }
   }
 ]
 
