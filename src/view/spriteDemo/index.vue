@@ -79,10 +79,15 @@ onMounted(() => {
    * 踢球
    */
   const shoot = async () => {
-    robot.animate([animateBehavior[0].ani], animateBehavior[0].transitionConfig).finished
-    await robot.animate([animateBehavior[1].ani], animateBehavior[1].transitionConfig).finished
-    await robot.animate([animateBehavior[2].ani], animateBehavior[2].transitionConfig).finished
-    await robot.animate([animateBehavior[3].ani], animateBehavior[3].transitionConfig).finished
+    for (let index = 0; index < animateBehavior.length; index++) {
+      if (index === 0) {
+        robot.animate([animateBehavior[index].ani], animateBehavior[index].transitionConfig)
+          .finished
+      } else {
+        await robot.animate([animateBehavior[index].ani], animateBehavior[index].transitionConfig)
+          .finished
+      }
+    }
     console.log('animation end')
     resetPos()
   }
