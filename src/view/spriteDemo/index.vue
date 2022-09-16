@@ -61,32 +61,16 @@ const animateBehavior: AnimateBehaviorItem[] = [
 let robot // 足球实例
 let inFootballPrograss = ref(false)
 
-onMounted(() => {
+onMounted(async () => {
   const container = contanierRef.value
   const scene = new Scene({ container, width: 360, height: 800, mode: 'stickyTop' })
-  const layer = scene.layer()
-  robot = new Sprite('https://p5.ssl.qhimg.com/t01c33383c0e168c3c4.png')
-
-  resetPos()
-
   /**
-   * 踢球
+   * 图片预加载
    */
-  const shoot = async () => {
-    for (let index = 0; index < animateBehavior.length; index++) {
-      if (index === 0) {
-        robot.animate([animateBehavior[index].ani], animateBehavior[index].transitionConfig)
-          .finished
-      } else {
-        await robot.animate([animateBehavior[index].ani], animateBehavior[index].transitionConfig)
-          .finished
-      }
-    }
-    console.log('animation end')
-    inFootballPrograss.value = false
-    resetPos()
-  }
-
+  await scene.preload({ id: 'football', src: 'https://p5.ssl.qhimg.com/t01c33383c0e168c3c4.png' })
+  const layer = scene.layer()
+  robot = new Sprite('football')
+  resetPos()
   layer.append(robot)
   robot.addEventListener('click', () => {
     console.log('xxxxx---start')
@@ -96,9 +80,6 @@ onMounted(() => {
     inFootballPrograss.value = true
     shoot()
   })
-  // robot.addEventListener('touchend', evt => {
-  //   console.log('xxxxxx---end', evt)
-  // })
 })
 
 /**
@@ -115,10 +96,28 @@ const resetPos = () => {
 }
 
 /**
+ * 踢球
+ */
+const shoot = async () => {
+  for (let index = 0; index < animateBehavior.length; index++) {
+    if (index === 0) {
+      robot.animate([animateBehavior[index].ani], animateBehavior[index].transitionConfig).finished
+    } else {
+      await robot.animate([animateBehavior[index].ani], animateBehavior[index].transitionConfig)
+        .finished
+    }
+  }
+  console.log('animation end')
+  inFootballPrograss.value = false
+  resetPos()
+}
+
+/**
  * 中止动画
  */
 const stopAnimation = () => {
   robot.deactivateAnimations()
+  inFootballPrograss.value = false
 }
 
 /**
@@ -130,7 +129,6 @@ const stopAnimation = () => {
 
 const stop = () => {
   stopAnimation()
-  resetPos()
 }
 </script>
 
