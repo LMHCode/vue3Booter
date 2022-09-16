@@ -67,7 +67,10 @@ onMounted(async () => {
   /**
    * 图片预加载
    */
-  await scene.preload({ id: 'football', src: 'https://p5.ssl.qhimg.com/t01c33383c0e168c3c4.png' })
+  await scene.preload({
+    id: 'football',
+    src: 'https://transsnet-app-images-prod.s3.eu-west-1.amazonaws.com/20211014/6167faf36272e658bc695ab6.gif'
+  })
   const layer = scene.layer()
   robot = new Sprite('football')
   resetPos()
