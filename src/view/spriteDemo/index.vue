@@ -58,23 +58,17 @@ const animateBehavior: AnimateBehaviorItem[] = [
   }
 ]
 
+let robot // 足球实例
+let inFootballPrograss = ref(false)
+
 onMounted(() => {
   const container = contanierRef.value
   const scene = new Scene({ container, width: 360, height: 800, mode: 'stickyTop' })
   const layer = scene.layer()
-  const robot = new Sprite('https://p5.ssl.qhimg.com/t01c33383c0e168c3c4.png')
-  /**
-   * 重置球初始位置
-   */
-  const resetPos = () => {
-    robot.attr({
-      anchor: [0.5, 0.5], // 锚点，你可以理解为css3中的transform-origin
-      pos: [180, 500], // 位置，最大为 360 * 800 也就是场景的大小
-      size: [36, 50], // 大小，默认为图片的宽高
-      scale: [1, 1] // 缩放，默认 1 1
-    })
-  }
+  robot = new Sprite('https://p5.ssl.qhimg.com/t01c33383c0e168c3c4.png')
+
   resetPos()
+
   /**
    * 踢球
    */
@@ -89,21 +83,60 @@ onMounted(() => {
       }
     }
     console.log('animation end')
+    inFootballPrograss.value = false
     resetPos()
   }
 
   layer.append(robot)
-  robot.addEventListener('click', evt => {
-    console.log('xxxxx---start', evt)
+  robot.addEventListener('click', () => {
+    console.log('xxxxx---start')
+    if (inFootballPrograss.value) {
+      return
+    }
+    inFootballPrograss.value = true
     shoot()
   })
   // robot.addEventListener('touchend', evt => {
   //   console.log('xxxxxx---end', evt)
   // })
 })
+
+/**
+ * 重置球初始位置
+ */
+const resetPos = () => {
+  robot.attr({
+    anchor: [0.5, 0.5], // 锚点，你可以理解为css3中的transform-origin
+    pos: [180, 500], // 位置，最大为 360 * 800 也就是场景的大小
+    size: [36, 50], // 大小，默认为图片的宽高
+    scale: [1, 1] // 缩放，默认 1 1
+    // opacity: 0
+  })
+}
+
+/**
+ * 中止动画
+ */
+const stopAnimation = () => {
+  robot.deactivateAnimations()
+}
+
+/**
+ * 激活动画 只能激活最近的一次动画
+ */
+// const continueAnimation = () => {
+//   robot.activateAnimations()
+// }
+
+const stop = () => {
+  stopAnimation()
+  resetPos()
+}
 </script>
 
 <template>
+  <!-- <button @click="continueAnimation">continue</button> -->
+  <button @click="stop">stop</button>
   <div id="stage" ref="contanierRef"></div>
 </template>
 
